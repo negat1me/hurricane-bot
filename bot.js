@@ -7,7 +7,6 @@ const admins = [416914933, 747635928]
 
 bot.command('hurricane', (ctx) => {
     ctx.reply('РОТА ПІДЬЙОМ', {
-        "chat_id": -4636218525,
         "text": hurricaneMain.join(', ') + 'КС НАХУЙ',
         "parse_mode": "MarkdownV2"
     })
@@ -15,7 +14,6 @@ bot.command('hurricane', (ctx) => {
 
 bot.command('hurricanсhiki', (ctx) => {
     ctx.reply('РОТА ПІДЬЙОМ', {
-        "chat_id": -4636218525,
         "text": hurricaneMain.join(', ') + 'КС НАХУЙ',
         "parse_mode": "MarkdownV2"
     })
