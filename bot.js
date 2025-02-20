@@ -6,15 +6,15 @@ let hurricaneReserve = [];
 const admins = [416914933, 747635928]
 
 bot.command('hurricane', (ctx) => {
-    ctx.send('РОТА ПІДЬЙОМ', {
+    ctx.reply('РОТА ПІДЬЙОМ', {
         "chat_id": -4636218525,
-        "text": hurricaneMain.join(', '),
+        "text": hurricaneMain.join(', ') + 'КС НАХУЙ',
         "parse_mode": "MarkdownV2"
     })
 })
 
 bot.command('hurricanсhiki', (ctx) => {
-    ctx.send('РОТА ПІДЬЙОМ', {
+    ctx.reply('РОТА ПІДЬЙОМ', {
         "chat_id": -4636218525,
         "text": hurricaneMain.join(', ') + 'КС НАХУЙ',
         "parse_mode": "MarkdownV2"
@@ -24,6 +24,10 @@ bot.command('hurricanсhiki', (ctx) => {
 
 bot.on('message', async (ctx) => {
     const text = ctx.text;
+
+    if (!text) {
+        return;
+    }
 
     if (typeof text === 'string' && text.includes('/setMain') && admins.includes(ctx.senderId)) {
         const [_, ...ids] = text.split(' ');
