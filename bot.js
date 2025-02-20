@@ -7,15 +7,15 @@ const admins = [416914933, 747635928]
 
 bot.command('hurricane', (ctx) => {
     ctx.reply('РОТА ПІДЬЙОМ', {
-        "text": hurricaneMain.join(', ') + 'КС НАХУЙ',
-        "parse_mode": "MarkdownV2"
+        text: hurricaneMain.join(', ') + ' КС НАХУЙ',
+        parse_mode: "MarkdownV2"
     })
 })
 
 bot.command('hurricanсhiki', (ctx) => {
     ctx.reply('РОТА ПІДЬЙОМ', {
-        "text": hurricaneMain.join(', ') + 'КС НАХУЙ',
-        "parse_mode": "MarkdownV2"
+        text: hurricaneMain.join(', ') + ' КС НАХУЙ',
+        parse_mode: "MarkdownV2"
     })
 })
 
